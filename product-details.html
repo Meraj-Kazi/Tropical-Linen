@@ -1,0 +1,855 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/fontawesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" id="wps-plugin-css" href="https://shapedplugin.com/demo/woocommerce-product-slider-pro/wp-content/themes/woo-product-slider-demo/assets/css/plugin.min.css?ver=0.0.7" type="text/css" media="all">
+        <link rel="stylesheet" id="sp-wpsp-style-css" href="https://shapedplugin.com/demo/woocommerce-product-slider-pro/wp-content/plugins/woo-product-slider-pro/public/assets/css/style.min.css?ver=2.5.6" type="text/css" media="all">
+    </head>
+
+    <body class="">
+        <section class="back-color pb-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="offset-1 col-10">
+                        <header class="header">
+
+                            <div class="row mb-5 mt-4">
+                                <div class="col-4">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <label for="CURRENCY" class="pr-4 btn-e">CURRENCY:</label>
+                                            <select id="dollar" class="btn-e">
+                                                <option value="dollar">DOLLAR</option>
+                                                <option value="taka">TAKA</option>
+                                                <option value="opel">DOLLAR</option>
+                                                <option value="audi">TAKA</option>
+                                            </select>
+                                            <button type="button" class="btn btn-default btn-e ml-2">EN</button>
+                                            <button type="button" class="btn btn-default btn-e ml-2">ES</button>
+                                            <button type="button" class="btn btn-default btn-e ml-2">FR</button>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="col-8">
+                                    <div class="topnav">
+                                        <ul class="top-link list-inline">
+                                            <li class="account" id="my_account">
+                                                <a href="#" title="My Account " class="btn-xs " data-toggle="dropdown">
+                                                    <i class="fas fa-user pr-1"></i> <span>My Account </span>  
+                                                </a>
+                                                <!--                                            <ul class="dropdown-menu "> dropdown-toggle
+                                                                                                <li><a href="register.html">Register</a>
+                                                                                                </li>
+                                                                                                <li><a href="login.html">Login</a>
+                                                                                                </li>
+                                                                                            </ul>-->
+                                            </li>
+                                            <li class="wishlist ">
+                                                <a href="#" id="wishlist-total" class="top-link-wishlist" title="Wish List (0) ">
+                                                    <i class="fas fa-book pr-1"></i>  Wish List (0) 
+                                                </a>
+                                            </li>
+                                            <li class=""><a href="login.html"><i class="fas fa-shopping-cart pr-1"></i></i>My Cart</a>
+                                            </li>
+                                            <li class="checkout "><a href="checkout.html" class="btn-link" title="Checkout "><span>
+                                                        <i class="fas fa-check pr-1"></i>Checkout </span></a>
+                                            </li>
+                                            <li class=""><a href="login.html"><i class="fas fa-sign-in-alt pr-1"></i>Login</a>
+                                            </li>
+                                        </ul>
+                                        <!--                                    <a class="active" href="#home">Home</a>
+                                                                            <a href="#news">News</a>
+                                                                            <a href="#contact">Contact</a>
+                                                                            <a href="#about">About</a>-->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="navbar-logo col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                    <div class="logo"><a href="index.php"><img src="images/logo.png" title="Your Store" alt="Your Store"></a></div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                    <p class="add-test">PHONE: <span class="text-pi">1(234)56789</span></p>
+                                    <P class="add-test">Call us Monday-Saturday:9:00am - 6:00pm</P>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                    <div class="search-container">
+                                        <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+                                            <input type="text" placeholder="Shopping Cart- $0.00" name="search2">
+                                            <button type="submit"><i class="fas fa-shopping-cart"></i></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </header>
+
+                    </div>
+                </div>
+            </div>  
+        </section>
+        <header class="mid-navhead">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="offset-1 col-10">
+                        <nav class="navbar navbar-expand-md  navbar-dark ptb-0">
+
+                            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myMenu">
+                                <i class="navbar-toggler-icon"></i>
+                            </button>
+                            <div class="collapse navbar-collapse midnav" id="myMenu">
+                                <div class="row">
+                                    <div class="col-9 border-box">
+                                        <ul class="navbar-nav ">
+                                            <li class="nav-item "><a href="index.html" class="nav-link text-secondary">Home</a></li>
+                                            <li class="nav-item"><a href="About_me.html"  class="nav-link text-secondary">About Me</a></li>
+                                            <li class="nav-item"><a href="skills.html"  class="nav-link text-secondary">skills</a></li>
+                                            <li class="nav-item"><a href="protfolio.html"  class="nav-link text-secondary">Portfolio</a></li>
+                                            <li class="nav-item"><a href="contact_us.html" class="nav-link text-secondary">Contact Me</a></li>
+                                        </ul>
+
+                                        <!--                                        <form action="" class="top-search example" method="post" accept-charset="utf-8">
+                                                                                    <input type="text" placeholder="Search.." name="keywords">
+                                                                                    <button type="submit"><i class="fa fa-search"></i></button>
+                                                                                </form>              -->
+                                    </div>
+                                    <div class="col-3">
+                                        <form class="example1" action="/action_page.php" style="margin:1px 0;">
+                                            <input type="text" placeholder="Shopping Cart- $0.00" name="search2">
+                                            <button type="submit"><i class="fa fa-search"></i></button>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </nav> 
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <section class="back-color">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="offset-1 col-10 ptb-0">
+                        <nav >
+                            <ul class="breadcrumb">
+                                <li class="breadcrumb-item active" >
+                                    <ul class="breadcrumb justify-content-center">
+                                        <li class="breadcrumb-item"><a href="../index.html" class="home">Home</a></li>
+                                        <li class="breadcrumb-item active">Woman</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="offset-1 col-10">
+                        <div class="row">
+                            <div class="col-8 l-side">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="img-bannar mb-5">
+                                            <img src="images/thin-banner.jpg" class="img-fluid img-ban">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="back-color">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class=" p-4">
+                                                <label class="btn-veiw">View As :</label>
+                                                <i class="fas fa-th pl-3"></i>
+                                                <i class="fas fa-list pl-3"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="p-4 float-right">
+                                                <label class="btn-veiw">Sort BY :</label>
+                                                <select id="Position" class="btn-e">
+                                                    <option value="p">Position</option>
+                                                    <option value="v">TAKA</option>
+
+                                                </select>
+                                                <label class="btn-veiw">show :</label>
+                                                <select id="3" class="btn-e">
+                                                    <option value="p">6</option>
+                                                    <option value="v">TAKA</option>
+
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="img-sec mt-5">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img src="images/household-1.jpg" alt="" class="img-fluid item-img" >
+
+                                        </div>
+                                        <div class="col-9">
+                                            <div class=" mt-3">
+                                                <h3 class="text-uppercase">New model dress</h3>
+                                                <p class="text-list">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                            </div>
+                                            <div class="left-itm">
+                                                <button class="button-price">$500</button>
+                                                <div class="btn-group">
+                                                    
+                                                    <button class="button bt-2"><i class="fas fa-shopping-cart"></i></button>
+                                                    <button class="button"><i class="fas fa-heart"></i></button>
+                                                    <button class="button bt-2">DETAILS</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-4 r-side">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+
+            <div class="copyright-section">
+
+            </div>
+        </footer>
+        <style>
+            .wpsp-slider-section #sp-woo-product-slider-pro850.wpsp-product-section .slick-list {
+                margin-bottom: -20px;
+            }
+            .wpsp-slider-section #sp-woo-product-slider-pro850.wpsp-product-section{
+                margin-left: -20px;
+            }
+            .wpsp-slider-section #sp-woo-product-slider-pro850.wpsp-product-section .slick-slide {
+                margin-left: 20px;
+            }
+            .wpsp-slider-section #sp-woo-product-slider-pro850.wpsp-product-section .wpsp-product {
+                margin-bottom: 20px;
+            }
+        
+            .pagination-type-number #sp-woo-product-slider-pro850.wpsp-product-section .slick-dots li button{
+                color: #16a0ad;
+            }
+            .pagination-type-number #sp-woo-product-slider-pro850.wpsp-product-section .slick-dots li.slick-active button,
+            .pagination-type-number #sp-woo-product-slider-pro850.wpsp-product-section .slick-dots li button:hover{
+                color: #ffffff;
+            }
+            .pagination-type-number #sp-woo-product-slider-pro850.wpsp-product-section .slick-dots li button:before{
+                background-color: #00c1cc;
+            }
+        .wpsp-slider-section #sp-woo-product-slider-pro850.wpsp-product-section .wpsp-product .sale_text{
+        color: #ffffff;
+        font-size: 10px;
+        line-height: 10px;
+        text-transform: uppercase;
+        letter-spacing: 1pxpx;
+        text-align: center;
+            font-family: Sniglet;
+            font-style: normal; font-weight: 400;
+        background-color: #1abc9c;
+    }.wpsp-slider-section #sp-woo-product-slider-pro850.wpsp-product-section .wpsp-product .wpsp-out-of-stock{
+        color: #ffffff;
+        font-size: 10px;
+        line-height: 10px;
+        text-transform: uppercase;
+        letter-spacing: 1pxpx;
+        text-align: center;
+            font-family: Sniglet;
+            font-style: normal; font-weight: 400;
+        background-color: #fd5a27;
+        }#wpsp-slider-section.wpsp-slider-section850 h2.sp-woo-product-slider-pro-section-title{
+            color: #444444;
+            font-size: 22px;
+            line-height: 23px;
+            text-transform: none;
+            letter-spacing: normalpx;
+            text-align: left;
+                    font-family: Open Sans;
+                    font-style: normal; font-weight: 600;
+        }
+        .wpsp-slider-section #sp-woo-product-slider-pro850.wpsp-product-section .wpsp-product-price{
+            color: #222222;
+            font-size: 14px;
+            line-height: 19px;
+            text-transform: none;
+            letter-spacing: normalpx;
+            text-align: center;
+            font-family: Sniglet;
+            font-style: normal; font-weight: 400;
+        }
+        .wpsp-slider-section #sp-woo-product-slider-pro850.wpsp-product-section .wpsp-product-price del{
+            color: #888888;
+        }
+    
+        .wpsp-slider-section #sp-woo-product-slider-pro850.wpsp-product-section .wpsp-product .star-rating span:before{
+            color: #F4C100;
+        }
+        .wpsp-slider-section #sp-woo-product-slider-pro850.wpsp-product-section .wpsp-product .star-rating:before{
+            color: #C8C8C8;
+        }
+    
+        .wpsp-slider-section #sp-woo-product-slider-pro850.wpsp-product-section .wpsp-product-title a {
+            color: #444444;
+            font-size: 15px;
+            line-height: 20px;
+            text-transform: uppercase;
+            letter-spacing: normalpx;
+            font-family: Sniglet;
+            font-style: normal; font-weight: 400;
+        }
+        .wpsp-slider-section #sp-woo-product-slider-pro850.wpsp-product-section .wpsp-product-title{
+            text-align: center;
+        }
+        .wpsp-slider-section #sp-woo-product-slider-pro850.wpsp-product-section .wpsp-product-title a:hover{
+            color: #fca055;
+        }
+    
+        .wpsp-slider-section #sp-woo-product-slider-pro850.wpsp-product-section .wpsp-product-cat{
+            text-align: center;
+        }
+        .wpsp-slider-section #sp-woo-product-slider-pro850.wpsp-product-section .wpsp-product-cat a{
+            color: #444444;
+            font-size: 14px;
+            line-height: 19px;
+            text-transform: none;
+            letter-spacing: normalpx;
+            font-family: Sniglet;
+            font-style: normal; font-weight: 400;
+        }
+        .wpsp-slider-section #sp-woo-product-slider-pro850.wpsp-product-section .wpsp-product-cat a:hover{
+            color: #955b89;
+        }
+    
+        .wpsp-slider-section #sp-woo-product-slider-pro850.wpsp-product-section .wpsp-cart-button a.button:not(.sp-wqvpro-view-button):not(.sp-wqv-view-button){
+            font-size: 14px;
+            line-height: 19px;
+            text-transform: none;
+            letter-spacing: normalpx;
+            text-align: center;font-family: Sniglet;
+            font-style: normal; font-weight: 400;
+            color: #444444;
+            background-color: transparent;
+            border: 1px solid #fca055;
+            border-radius: 0px;
+        }
+        .wpsp-slider-section #sp-woo-product-slider-pro850.wpsp-product-section .wpsp-cart-button a.button:not(.sp-wqvpro-view-button):not(.sp-wqv-view-button):hover,
+        .wpsp-slider-section #sp-woo-product-slider-pro850.wpsp-product-section .wpsp-cart-button a.button:not(.sp-wqvpro-view-button):not(.sp-wqv-view-button).added_to_cart{
+            color: #ffffff;
+            background-color: #fca055;
+            border-color: #fca055;
+        }
+    
+        .wpsp-slider-section #sp-woo-product-slider-pro850.wpsp-product-section .wpsp-product .wpspro-product-data{
+            border: 1px solid #dddddd;
+        }
+        .wpsp-slider-section #sp-woo-product-slider-pro850.wpsp-product-section .wpsp-product .wpspro-product-data:hover{
+            border-color: #dddddd;
+        }
+        
+    .wpsp-slider-section #sp-woo-product-slider-pro850.wpsp-product-section .wpsp-product .product-details-inner{
+        background-color: #ffffff;
+    }.wpsp-slider-section #sp-woo-product-slider-pro850.wpsp-product-section .wpsp-product a.sp-wqv-view-button,
+        .wpsp-slider-section #sp-woo-product-slider-pro850.wpsp-product-section .wpsp-product a.sp-wqvpro-view-button{
+            display: none !important;
+        }
+        .wpsp-slider-section #sp-woo-product-slider-pro850.wpsp-product-section .slick-prev,
+        .wpsp-slider-section #sp-woo-product-slider-pro850.wpsp-product-section .slick-next{
+            border-color: #16a0ad;
+            background-color: #16a0ad;
+            color: #ffffff;
+            border-radius: 0%;
+        }
+        .wpsp-slider-section #sp-woo-product-slider-pro850.wpsp-product-section .slick-prev:hover,
+        .wpsp-slider-section #sp-woo-product-slider-pro850.wpsp-product-section .slick-next:hover{
+            color: #ffffff;
+            background-color: #00c1cc;
+            border-color: #00c1cc;
+        }
+        .navigation_position_vertical_center #sp-woo-product-slider-pro850.wpsp-product-section .wpsp-product{
+            padding-right: 2px;
+        }
+    
+            #wpsp-slider-section.wpsp-slider-section850.navigation_position_top_left .slick-next {
+                left: 20px;
+                margin-left: 36px;
+            }
+            #wpsp-slider-section.wpsp-slider-section850.navigation_position_top_left .slick-prev {
+                left: 20px;
+            }
+            
+    #wpsp-slider-section.wpsp-slider-section850.wpsp_category_theme_one .wpsp-cat-item a.wpsp-cat-name,
+    #wpsp-slider-section.wpsp-slider-section850.wpsp_category_theme_two .wpsp-cat-item a.wpsp-cat-name{
+            font-size: 16px;
+            line-height: 19px;
+            text-transform: none;
+            letter-spacing: normalpx;
+            text-align: center;
+            font-family: Open Sans;
+            font-style: normal; font-weight: 600;
+    }
+    #wpsp-slider-section.wpsp-slider-section850.wpsp_category_theme_one .wpsp-cat-item a.wpsp-cat-name{
+           background-color: #e99b05;
+           color: #ffffff;
+    }
+    #wpsp-slider-section.wpsp-slider-section850.wpsp_category_theme_one .wpsp-cat-item:hover a.wpsp-cat-name{
+           background-color: #e99b05;
+           color: #ffffff;
+    }
+    #wpsp-slider-section.wpsp-slider-section850.wpsp_category_theme_two .wpsp-cat-item a.wpsp-cat-name{
+           background-color: rgba(0,0,0,0.5);
+           color: #ffffff;
+    }
+    #wpsp-slider-section.wpsp-slider-section850.wpsp_category_theme_two .wpsp-cat-item:hover a.wpsp-cat-name{
+           background-color: rgba(255,35,35,0.5);
+           color: #ffffff;
+    }
+    /* Responsive CSS */
+    /* lg */
+    @media (min-width: 990px) and (max-width: 1100px) {
+        .sp-wpspro-col-lg-1{
+            width: 100%;
+        }
+        .sp-wpspro-col-lg-2{
+            width: 50%;
+        }
+        .sp-wpspro-col-lg-3{
+            width: 33.2222%;
+        }
+        .sp-wpspro-col-lg-4{
+            width: 24.9%;
+        }
+        .sp-wpspro-col-lg-5{
+            width: 19.9%;
+        }
+        .sp-wpspro-col-lg-6{
+            width: 16.6667%;
+        }
+        .sp-wpspro-col-lg-7 {
+            width: 14.285714286%;
+        }
+        .sp-wpspro-col-lg-8 {
+            width: 12.5%;
+        }
+        .sp-wpspro-col-lg-9 {
+            width: 11.111111111%;
+        }
+        .sp-wpspro-col-lg-10 {
+            width: 10%;
+        }
+        .sp-wpspro-col-lg-11 {
+            width: 9.090909091%;
+        }
+        .sp-wpspro-col-lg-12 {
+            width: 8.333333333%;
+        }
+    
+    }
+    /* md */
+    @media (min-width: 650px) and (max-width: 990px) {
+        .sp-wpspro-col-md-1{
+            width: 100%;
+        }
+        .sp-wpspro-col-md-2{
+            width: 50%;
+        }
+        .sp-wpspro-col-md-3{
+            width: 33.2222%;
+        }
+        .sp-wpspro-col-md-4{
+            width: 24.9%;
+        }
+        .sp-wpspro-col-md-5{
+            width: 19.9%;
+        }
+        .sp-wpspro-col-md-6{
+            width: 16.6667%;
+        }
+        .sp-wpspro-col-md-7 {
+            width: 14.285714286%;
+        }
+        .sp-wpspro-col-md-8 {
+            width: 12.5%;
+        }
+        .sp-wpspro-col-md-9 {
+            width: 11.111111111%;
+        }
+        .sp-wpspro-col-md-10 {
+            width: 10%;
+        }
+        .sp-wpspro-col-md-11 {
+            width: 9.090909091%;
+        }
+        .sp-wpspro-col-md-12 {
+            width: 8.333333333%;
+        }
+    
+    }
+    
+    /* sm */
+    @media (max-width: 650px) {
+        .sp-wpspro-col-sm-1{
+            width: 100%;
+        }
+        .sp-wpspro-col-sm-2{
+            width: 49.9%;
+        }
+        .sp-wpspro-col-sm-3{
+            width: 33.2222%;
+        }
+        .sp-wpspro-col-sm-4{
+            width: 24.9%;
+        }
+        .sp-wpspro-col-sm-5{
+            width: 19.9%;
+        }
+        .sp-wpspro-col-sm-6{
+            width: 16.6667%;
+        }
+        .sp-wpspro-col-sm-7 {
+            width: 14.285714286%;
+        }
+        .sp-wpspro-col-sm-8 {
+            width: 12.5%;
+        }
+        .sp-wpspro-col-sm-9 {
+            width: 11.111111111%;
+        }
+        .sp-wpspro-col-sm-10 {
+            width: 10%;
+        }
+        .sp-wpspro-col-sm-11 {
+            width: 9.090909091%;
+        }
+        .sp-wpspro-col-sm-12 {
+            width: 8.333333333%;
+        }
+    
+    }</style>
+        <section>
+            <div id="wpsp-slider-section" class="wpsp-slider-section wpsp-slider-section850 sp-woo-product-slider-pro850 wpsp_theme_two pagination-type-number navigation_position_top_right">
+                <h2 class="sp-woo-product-slider-pro-section-title">2. Theme Style Two (Pro)</h2>
+                <div id="sp-woo-product-slider-pro850" class="wpsp-product-section normal slick-initialized slick-slider slick-dotted" dir="ltr" data-layout="slider" data-pagination="normal" data-preloader="" data-lightbox="1" data-arrowicon="angle" data-slick="{&quot;dots&quot;: true, &quot;pauseOnHover&quot;: true, &quot;slidesToShow&quot;: 4, &quot;speed&quot;: 300, &quot;arrows&quot;: true, &quot;autoplay&quot;: false, &quot;autoplaySpeed&quot;: 3000, &quot;swipe&quot;: true, &quot;draggable&quot;: true, &quot;rtl&quot;: false, &quot;infinite&quot;: true, &quot;slidesToScroll&quot;: 1, &quot;rows&quot;: 1, &quot;cssEase&quot;: &quot;ease&quot;, &quot;responsive&quot;: [ {&quot;breakpoint&quot;: 1100, &quot;settings&quot;: { &quot;slidesToShow&quot;: 3, &quot;slidesToScroll&quot;: 1, &quot;rows&quot;: 1 } }, {&quot;breakpoint&quot;: 990, &quot;settings&quot;: { &quot;slidesToShow&quot;: 2, &quot;slidesToScroll&quot;: 1, &quot;rows&quot;: 1 } }, {&quot;breakpoint&quot;: 650, &quot;settings&quot;: { &quot;slidesToShow&quot;: 1, &quot;slidesToScroll&quot;: 1, &quot;rows&quot;: 1, &quot;dots&quot;: false, &quot;arrows&quot;: false } } ] }" role="toolbar">
+                    <div class="slick-prev slick-arrow" style="display: block;"><i class="fa fa-angle-left"></i></div>
+                    <div aria-live="polite" class="slick-list draggable">
+                        <div class="slick-track" role="listbox" style="opacity: 1; width: 4060px; transform: translate3d(-1160px, 0px, 0px);">
+                            <div class="wpsp-product wpsp-masonry-item  slick-slide slick-cloned" data-slick-index="-4" aria-hidden="true" tabindex="-1" style="width: 270px;">
+                                <div class="wpspro-product-data">
+                                    <a href="https://shapedplugin.com/demo/woocommerce-product-slider-pro/wp-content/uploads/2017/07/garage-t-shirt.jpg" class="wpsp-product-image sp-wpsp-lightbox " tabindex="-1"><img src="https://shapedplugin.com/demo/woocommerce-product-slider-pro/wp-content/uploads/2017/07/garage-t-shirt-268x313.jpg" alt="" class="wpsp-product-img"></a>
+                                    <div class="product-details">
+                                        <div class="product-details-inner">
+                                            <div class="wpsp-product-title"><a href="https://shapedplugin.com/demo/woocommerce-product-slider-pro/product/garage-t-shirt/" tabindex="-1">Garage T-Shirt</a></div>
+                                            <div class="wpsp-product-price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>29.00</span>
+                                            </div>
+                                            <div class="sp-text-center">
+                                                <div class="star-rating" title="Rated 4.00 out of 5"><span style="width:80%"><strong itemprop="ratingValue" class="rating">4.00</strong> out of 5</span></div>
+                                            </div>
+                                            <div class="wpsp-cart-button">
+                                                <p class="product woocommerce add_to_cart_inline " style="border:4px solid #ccc; padding: 12px;"><a href="?add-to-cart=867" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="867" data-product_sku="" aria-label="Add “Garage T-Shirt” to your cart" rel="nofollow" tabindex="-1">Add to cart</a><a href="#" id="" class="button sp-wqv-view-button after_add_to_cart" data-id="867" data-effect="mfp-zoom-in" data-wqv="{&quot;close_button&quot;: &quot;1&quot; } " tabindex="-1">Quick View</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wpsp-product wpsp-masonry-item  slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" tabindex="-1" style="width: 270px;">
+                                <div class="wpspro-product-data">
+                                    <a href="https://shapedplugin.com/demo/woocommerce-product-slider-pro/wp-content/uploads/2017/07/pinky-shoes.jpg" class="wpsp-product-image sp-wpsp-lightbox " tabindex="-1"><img src="https://shapedplugin.com/demo/woocommerce-product-slider-pro/wp-content/uploads/2017/07/pinky-shoes-268x313.jpg" alt="" class="wpsp-product-img"></a>
+                                    <div class="product-details">
+                                        <div class="product-details-inner">
+                                            <div class="wpsp-product-title"><a href="https://shapedplugin.com/demo/woocommerce-product-slider-pro/product/pinky-shoes/" tabindex="-1">Pinky Shoes</a></div>
+                                            <div class="wpsp-product-price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>28.00</span>
+                                            </div>
+                                            <div class="sp-text-center">
+                                                <div class="star-rating" title="Rated 5.00 out of 5"><span style="width:100%"><strong itemprop="ratingValue" class="rating">5.00</strong> out of 5</span></div>
+                                            </div>
+                                            <div class="wpsp-cart-button">
+                                                <p class="product woocommerce add_to_cart_inline " style="border:4px solid #ccc; padding: 12px;"><a href="?add-to-cart=870" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="870" data-product_sku="" aria-label="Add “Pinky Shoes” to your cart" rel="nofollow" tabindex="-1">Add to cart</a><a href="#" id="" class="button sp-wqv-view-button after_add_to_cart" data-id="870" data-effect="mfp-zoom-in" data-wqv="{&quot;close_button&quot;: &quot;1&quot; } " tabindex="-1">Quick View</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wpsp-product wpsp-masonry-item  slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" tabindex="-1" style="width: 270px;">
+                                <div class="wpspro-product-data">
+                                    <a href="https://shapedplugin.com/demo/woocommerce-product-slider-pro/wp-content/uploads/2017/07/soft-baby-cloth.jpg" class="wpsp-product-image sp-wpsp-lightbox " tabindex="-1"><img src="https://shapedplugin.com/demo/woocommerce-product-slider-pro/wp-content/uploads/2017/07/soft-baby-cloth-268x313.jpg" alt="" class="wpsp-product-img"></a>
+                                    <div class="product-details">
+                                        <div class="product-details-inner">
+                                            <div class="wpsp-product-title"><a href="https://shapedplugin.com/demo/woocommerce-product-slider-pro/product/soft-baby-cloth/" tabindex="-1">Soft Baby Cloth</a></div>
+                                            <div class="wpsp-product-price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>64.00</span>
+                                            </div>
+                                            <div class="sp-text-center">
+                                                <div class="star-rating" title="Rated 3.00 out of 5"><span style="width:60%"><strong itemprop="ratingValue" class="rating">3.00</strong> out of 5</span></div>
+                                            </div>
+                                            <div class="wpsp-cart-button">
+                                                <p class="product woocommerce add_to_cart_inline " style="border:4px solid #ccc; padding: 12px;"><a href="?add-to-cart=873" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="873" data-product_sku="" aria-label="Add “Soft Baby Cloth” to your cart" rel="nofollow" tabindex="-1">Add to cart</a><a href="#" id="" class="button sp-wqv-view-button after_add_to_cart" data-id="873" data-effect="mfp-zoom-in" data-wqv="{&quot;close_button&quot;: &quot;1&quot; } " tabindex="-1">Quick View</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wpsp-product wpsp-masonry-item  slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" tabindex="-1" style="width: 270px;">
+                                <div class="wpspro-product-data">
+                                    <a href="https://shapedplugin.com/demo/woocommerce-product-slider-pro/wp-content/uploads/2017/07/kidy-jeans.jpg" class="wpsp-product-image sp-wpsp-lightbox " tabindex="-1"><img src="https://shapedplugin.com/demo/woocommerce-product-slider-pro/wp-content/uploads/2017/07/kidy-jeans-268x313.jpg" alt="" class="wpsp-product-img">
+                                        <div class="sale_text" title="Sale">Sale</div>
+                                    </a>
+                                    <div class="product-details">
+                                        <div class="product-details-inner">
+                                            <div class="wpsp-product-title"><a href="https://shapedplugin.com/demo/woocommerce-product-slider-pro/product/kidy-jeans/" tabindex="-1">Kidy Jeans</a></div>
+                                            <div class="wpsp-product-price"><del><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>52.00</span></del> <ins><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>12.00</span></ins></div>
+                                            <div class="sp-text-center">
+                                                <div class="star-rating" title="Rated 5.00 out of 5"><span style="width:100%"><strong itemprop="ratingValue" class="rating">5.00</strong> out of 5</span></div>
+                                            </div>
+                                            <div class="wpsp-cart-button">
+                                                <p class="product woocommerce add_to_cart_inline " style="border:4px solid #ccc; padding: 12px;"><a href="?add-to-cart=877" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="877" data-product_sku="" aria-label="Add “Kidy Jeans” to your cart" rel="nofollow" tabindex="-1">Add to cart</a><a href="#" id="" class="button sp-wqv-view-button after_add_to_cart" data-id="877" data-effect="mfp-zoom-in" data-wqv="{&quot;close_button&quot;: &quot;1&quot; } " tabindex="-1">Quick View</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wpsp-product wpsp-masonry-item  slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide40" style="width: 270px;">
+                                <div class="wpspro-product-data">
+                                    <a href="https://shapedplugin.com/demo/woocommerce-product-slider-pro/wp-content/uploads/2017/07/spider-man.jpg" class="wpsp-product-image sp-wpsp-lightbox " tabindex="0"><img src="https://shapedplugin.com/demo/woocommerce-product-slider-pro/wp-content/uploads/2017/07/spider-man-268x313.jpg" alt="" class="wpsp-product-img"></a>
+                                    <div class="product-details">
+                                        <div class="product-details-inner">
+                                            <div class="wpsp-product-title"><a href="https://shapedplugin.com/demo/woocommerce-product-slider-pro/product/spider-man/" tabindex="0">Spider Man</a></div>
+                                            <div class="wpsp-product-price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>15.00</span>
+                                            </div>
+                                            <div class="sp-text-center">
+                                                <div class="star-rating" title="Rated 5.00 out of 5"><span style="width:100%"><strong itemprop="ratingValue" class="rating">5.00</strong> out of 5</span></div>
+                                            </div>
+                                            <div class="wpsp-cart-button">
+                                                <p class="product woocommerce add_to_cart_inline " style="border:4px solid #ccc; padding: 12px;"><a href="?add-to-cart=855" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="855" data-product_sku="" aria-label="Add “Spider Man” to your cart" rel="nofollow" tabindex="0">Add to cart</a><a href="#" id="sp-wqv-view-button" class="button sp-wqv-view-button after_add_to_cart" data-id="855" data-effect="mfp-zoom-in" data-wqv="{&quot;close_button&quot;: &quot;1&quot; } " tabindex="0">Quick View</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wpsp-product wpsp-masonry-item  slick-slide slick-active" data-slick-index="1" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide41" style="width: 270px;">
+                                <div class="wpspro-product-data">
+                                    <a href="https://shapedplugin.com/demo/woocommerce-product-slider-pro/wp-content/uploads/2017/07/super-man.jpg" class="wpsp-product-image sp-wpsp-lightbox " tabindex="0"><img src="https://shapedplugin.com/demo/woocommerce-product-slider-pro/wp-content/uploads/2017/07/super-man-268x313.jpg" alt="" class="wpsp-product-img">
+                                        <div class="wpsp-out-of-stock" title="Out of Stock">Out of Stock</div>
+                                    </a>
+                                    <div class="product-details">
+                                        <div class="product-details-inner">
+                                            <div class="wpsp-product-title"><a href="https://shapedplugin.com/demo/woocommerce-product-slider-pro/product/super-man/" tabindex="0">Super Man</a></div>
+                                            <div class="wpsp-product-price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>35.00</span>
+                                            </div>
+                                            <div class="sp-text-center">
+                                                <div class="star-rating" title="Rated 5.00 out of 5"><span style="width:100%"><strong itemprop="ratingValue" class="rating">5.00</strong> out of 5</span></div>
+                                            </div>
+                                            <div class="wpsp-cart-button">
+                                                <p class="product woocommerce add_to_cart_inline " style="border:4px solid #ccc; padding: 12px;"><a href="https://shapedplugin.com/demo/woocommerce-product-slider-pro/product/super-man/" data-quantity="1" class="button product_type_simple" data-product_id="864" data-product_sku="" aria-label="Read more about “Super Man”" rel="nofollow" tabindex="0">Read more</a><a href="#" id="sp-wqv-view-button" class="button sp-wqv-view-button after_add_to_cart" data-id="864" data-effect="mfp-zoom-in" data-wqv="{&quot;close_button&quot;: &quot;1&quot; } " tabindex="0">Quick View</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wpsp-product wpsp-masonry-item  slick-slide slick-active" data-slick-index="2" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide42" style="width: 270px;">
+                                <div class="wpspro-product-data">
+                                    <a href="https://shapedplugin.com/demo/woocommerce-product-slider-pro/wp-content/uploads/2017/07/garage-t-shirt.jpg" class="wpsp-product-image sp-wpsp-lightbox " tabindex="0"><img src="https://shapedplugin.com/demo/woocommerce-product-slider-pro/wp-content/uploads/2017/07/garage-t-shirt-268x313.jpg" alt="" class="wpsp-product-img"></a>
+                                    <div class="product-details">
+                                        <div class="product-details-inner">
+                                            <div class="wpsp-product-title"><a href="https://shapedplugin.com/demo/woocommerce-product-slider-pro/product/garage-t-shirt/" tabindex="0">Garage T-Shirt</a></div>
+                                            <div class="wpsp-product-price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>29.00</span>
+                                            </div>
+                                            <div class="sp-text-center">
+                                                <div class="star-rating" title="Rated 4.00 out of 5"><span style="width:80%"><strong itemprop="ratingValue" class="rating">4.00</strong> out of 5</span></div>
+                                            </div>
+                                            <div class="wpsp-cart-button">
+                                                <p class="product woocommerce add_to_cart_inline " style="border:4px solid #ccc; padding: 12px;"><a href="?add-to-cart=867" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="867" data-product_sku="" aria-label="Add “Garage T-Shirt” to your cart" rel="nofollow" tabindex="0">Add to cart</a><a href="#" id="sp-wqv-view-button" class="button sp-wqv-view-button after_add_to_cart" data-id="867" data-effect="mfp-zoom-in" data-wqv="{&quot;close_button&quot;: &quot;1&quot; } " tabindex="0">Quick View</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wpsp-product wpsp-masonry-item  slick-slide slick-active" data-slick-index="3" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide43" style="width: 270px;">
+                                <div class="wpspro-product-data">
+                                    <a href="https://shapedplugin.com/demo/woocommerce-product-slider-pro/wp-content/uploads/2017/07/pinky-shoes.jpg" class="wpsp-product-image sp-wpsp-lightbox " tabindex="0"><img src="https://shapedplugin.com/demo/woocommerce-product-slider-pro/wp-content/uploads/2017/07/pinky-shoes-268x313.jpg" alt="" class="wpsp-product-img"></a>
+                                    <div class="product-details">
+                                        <div class="product-details-inner">
+                                            <div class="wpsp-product-title"><a href="https://shapedplugin.com/demo/woocommerce-product-slider-pro/product/pinky-shoes/" tabindex="0">Pinky Shoes</a></div>
+                                            <div class="wpsp-product-price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>28.00</span>
+                                            </div>
+                                            <div class="sp-text-center">
+                                                <div class="star-rating" title="Rated 5.00 out of 5"><span style="width:100%"><strong itemprop="ratingValue" class="rating">5.00</strong> out of 5</span></div>
+                                            </div>
+                                            <div class="wpsp-cart-button">
+                                                <p class="product woocommerce add_to_cart_inline " style="border:4px solid #ccc; padding: 12px;"><a href="?add-to-cart=870" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="870" data-product_sku="" aria-label="Add “Pinky Shoes” to your cart" rel="nofollow" tabindex="0">Add to cart</a><a href="#" id="sp-wqv-view-button" class="button sp-wqv-view-button after_add_to_cart" data-id="870" data-effect="mfp-zoom-in" data-wqv="{&quot;close_button&quot;: &quot;1&quot; } " tabindex="0">Quick View</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wpsp-product wpsp-masonry-item  slick-slide" data-slick-index="4" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide44" style="width: 270px;">
+                                <div class="wpspro-product-data">
+                                    <a href="https://shapedplugin.com/demo/woocommerce-product-slider-pro/wp-content/uploads/2017/07/soft-baby-cloth.jpg" class="wpsp-product-image sp-wpsp-lightbox " tabindex="-1"><img src="https://shapedplugin.com/demo/woocommerce-product-slider-pro/wp-content/uploads/2017/07/soft-baby-cloth-268x313.jpg" alt="" class="wpsp-product-img"></a>
+                                    <div class="product-details">
+                                        <div class="product-details-inner">
+                                            <div class="wpsp-product-title"><a href="https://shapedplugin.com/demo/woocommerce-product-slider-pro/product/soft-baby-cloth/" tabindex="-1">Soft Baby Cloth</a></div>
+                                            <div class="wpsp-product-price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>64.00</span>
+                                            </div>
+                                            <div class="sp-text-center">
+                                                <div class="star-rating" title="Rated 3.00 out of 5"><span style="width:60%"><strong itemprop="ratingValue" class="rating">3.00</strong> out of 5</span></div>
+                                            </div>
+                                            <div class="wpsp-cart-button">
+                                                <p class="product woocommerce add_to_cart_inline " style="border:4px solid #ccc; padding: 12px;"><a href="?add-to-cart=873" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="873" data-product_sku="" aria-label="Add “Soft Baby Cloth” to your cart" rel="nofollow" tabindex="-1">Add to cart</a><a href="#" id="sp-wqv-view-button" class="button sp-wqv-view-button after_add_to_cart" data-id="873" data-effect="mfp-zoom-in" data-wqv="{&quot;close_button&quot;: &quot;1&quot; } " tabindex="-1">Quick View</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wpsp-product wpsp-masonry-item  slick-slide" data-slick-index="5" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide45" style="width: 270px;">
+                                <div class="wpspro-product-data">
+                                    <a href="https://shapedplugin.com/demo/woocommerce-product-slider-pro/wp-content/uploads/2017/07/kidy-jeans.jpg" class="wpsp-product-image sp-wpsp-lightbox " tabindex="-1"><img src="https://shapedplugin.com/demo/woocommerce-product-slider-pro/wp-content/uploads/2017/07/kidy-jeans-268x313.jpg" alt="" class="wpsp-product-img">
+                                        <div class="sale_text" title="Sale">Sale</div>
+                                    </a>
+                                    <div class="product-details">
+                                        <div class="product-details-inner">
+                                            <div class="wpsp-product-title"><a href="https://shapedplugin.com/demo/woocommerce-product-slider-pro/product/kidy-jeans/" tabindex="-1">Kidy Jeans</a></div>
+                                            <div class="wpsp-product-price"><del><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>52.00</span></del> <ins><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>12.00</span></ins></div>
+                                            <div class="sp-text-center">
+                                                <div class="star-rating" title="Rated 5.00 out of 5"><span style="width:100%"><strong itemprop="ratingValue" class="rating">5.00</strong> out of 5</span></div>
+                                            </div>
+                                            <div class="wpsp-cart-button">
+                                                <p class="product woocommerce add_to_cart_inline " style="border:4px solid #ccc; padding: 12px;"><a href="?add-to-cart=877" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="877" data-product_sku="" aria-label="Add “Kidy Jeans” to your cart" rel="nofollow" tabindex="-1">Add to cart</a><a href="#" id="sp-wqv-view-button" class="button sp-wqv-view-button after_add_to_cart" data-id="877" data-effect="mfp-zoom-in" data-wqv="{&quot;close_button&quot;: &quot;1&quot; } " tabindex="-1">Quick View</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wpsp-product wpsp-masonry-item  slick-slide slick-cloned" data-slick-index="6" aria-hidden="true" tabindex="-1" style="width: 270px;">
+                                <div class="wpspro-product-data">
+                                    <a href="https://shapedplugin.com/demo/woocommerce-product-slider-pro/wp-content/uploads/2017/07/spider-man.jpg" class="wpsp-product-image sp-wpsp-lightbox " tabindex="-1"><img src="https://shapedplugin.com/demo/woocommerce-product-slider-pro/wp-content/uploads/2017/07/spider-man-268x313.jpg" alt="" class="wpsp-product-img"></a>
+                                    <div class="product-details">
+                                        <div class="product-details-inner">
+                                            <div class="wpsp-product-title"><a href="https://shapedplugin.com/demo/woocommerce-product-slider-pro/product/spider-man/" tabindex="-1">Spider Man</a></div>
+                                            <div class="wpsp-product-price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>15.00</span>
+                                            </div>
+                                            <div class="sp-text-center">
+                                                <div class="star-rating" title="Rated 5.00 out of 5"><span style="width:100%"><strong itemprop="ratingValue" class="rating">5.00</strong> out of 5</span></div>
+                                            </div>
+                                            <div class="wpsp-cart-button">
+                                                <p class="product woocommerce add_to_cart_inline " style="border:4px solid #ccc; padding: 12px;"><a href="?add-to-cart=855" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="855" data-product_sku="" aria-label="Add “Spider Man” to your cart" rel="nofollow" tabindex="-1">Add to cart</a><a href="#" id="" class="button sp-wqv-view-button after_add_to_cart" data-id="855" data-effect="mfp-zoom-in" data-wqv="{&quot;close_button&quot;: &quot;1&quot; } " tabindex="-1">Quick View</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wpsp-product wpsp-masonry-item  slick-slide slick-cloned" data-slick-index="7" aria-hidden="true" tabindex="-1" style="width: 270px;">
+                                <div class="wpspro-product-data">
+                                    <a href="https://shapedplugin.com/demo/woocommerce-product-slider-pro/wp-content/uploads/2017/07/super-man.jpg" class="wpsp-product-image sp-wpsp-lightbox " tabindex="-1"><img src="https://shapedplugin.com/demo/woocommerce-product-slider-pro/wp-content/uploads/2017/07/super-man-268x313.jpg" alt="" class="wpsp-product-img">
+                                        <div class="wpsp-out-of-stock" title="Out of Stock">Out of Stock</div>
+                                    </a>
+                                    <div class="product-details">
+                                        <div class="product-details-inner">
+                                            <div class="wpsp-product-title"><a href="https://shapedplugin.com/demo/woocommerce-product-slider-pro/product/super-man/" tabindex="-1">Super Man</a></div>
+                                            <div class="wpsp-product-price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>35.00</span>
+                                            </div>
+                                            <div class="sp-text-center">
+                                                <div class="star-rating" title="Rated 5.00 out of 5"><span style="width:100%"><strong itemprop="ratingValue" class="rating">5.00</strong> out of 5</span></div>
+                                            </div>
+                                            <div class="wpsp-cart-button">
+                                                <p class="product woocommerce add_to_cart_inline " style="border:4px solid #ccc; padding: 12px;"><a href="https://shapedplugin.com/demo/woocommerce-product-slider-pro/product/super-man/" data-quantity="1" class="button product_type_simple" data-product_id="864" data-product_sku="" aria-label="Read more about “Super Man”" rel="nofollow" tabindex="-1">Read more</a><a href="#" id="" class="button sp-wqv-view-button after_add_to_cart" data-id="864" data-effect="mfp-zoom-in" data-wqv="{&quot;close_button&quot;: &quot;1&quot; } " tabindex="-1">Quick View</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wpsp-product wpsp-masonry-item  slick-slide slick-cloned" data-slick-index="8" aria-hidden="true" tabindex="-1" style="width: 270px;">
+                                <div class="wpspro-product-data">
+                                    <a href="https://shapedplugin.com/demo/woocommerce-product-slider-pro/wp-content/uploads/2017/07/garage-t-shirt.jpg" class="wpsp-product-image sp-wpsp-lightbox " tabindex="-1"><img src="https://shapedplugin.com/demo/woocommerce-product-slider-pro/wp-content/uploads/2017/07/garage-t-shirt-268x313.jpg" alt="" class="wpsp-product-img"></a>
+                                    <div class="product-details">
+                                        <div class="product-details-inner">
+                                            <div class="wpsp-product-title"><a href="https://shapedplugin.com/demo/woocommerce-product-slider-pro/product/garage-t-shirt/" tabindex="-1">Garage T-Shirt</a></div>
+                                            <div class="wpsp-product-price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>29.00</span>
+                                            </div>
+                                            <div class="sp-text-center">
+                                                <div class="star-rating" title="Rated 4.00 out of 5"><span style="width:80%"><strong itemprop="ratingValue" class="rating">4.00</strong> out of 5</span></div>
+                                            </div>
+                                            <div class="wpsp-cart-button">
+                                                <p class="product woocommerce add_to_cart_inline " style="border:4px solid #ccc; padding: 12px;"><a href="?add-to-cart=867" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="867" data-product_sku="" aria-label="Add “Garage T-Shirt” to your cart" rel="nofollow" tabindex="-1">Add to cart</a><a href="#" id="" class="button sp-wqv-view-button after_add_to_cart" data-id="867" data-effect="mfp-zoom-in" data-wqv="{&quot;close_button&quot;: &quot;1&quot; } " tabindex="-1">Quick View</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wpsp-product wpsp-masonry-item  slick-slide slick-cloned" data-slick-index="9" aria-hidden="true" tabindex="-1" style="width: 270px;">
+                                <div class="wpspro-product-data">
+                                    <a href="https://shapedplugin.com/demo/woocommerce-product-slider-pro/wp-content/uploads/2017/07/pinky-shoes.jpg" class="wpsp-product-image sp-wpsp-lightbox " tabindex="-1"><img src="https://shapedplugin.com/demo/woocommerce-product-slider-pro/wp-content/uploads/2017/07/pinky-shoes-268x313.jpg" alt="" class="wpsp-product-img"></a>
+                                    <div class="product-details">
+                                        <div class="product-details-inner">
+                                            <div class="wpsp-product-title"><a href="https://shapedplugin.com/demo/woocommerce-product-slider-pro/product/pinky-shoes/" tabindex="-1">Pinky Shoes</a></div>
+                                            <div class="wpsp-product-price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>28.00</span>
+                                            </div>
+                                            <div class="sp-text-center">
+                                                <div class="star-rating" title="Rated 5.00 out of 5"><span style="width:100%"><strong itemprop="ratingValue" class="rating">5.00</strong> out of 5</span></div>
+                                            </div>
+                                            <div class="wpsp-cart-button">
+                                                <p class="product woocommerce add_to_cart_inline " style="border:4px solid #ccc; padding: 12px;"><a href="?add-to-cart=870" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="870" data-product_sku="" aria-label="Add “Pinky Shoes” to your cart" rel="nofollow" tabindex="-1">Add to cart</a><a href="#" id="" class="button sp-wqv-view-button after_add_to_cart" data-id="870" data-effect="mfp-zoom-in" data-wqv="{&quot;close_button&quot;: &quot;1&quot; } " tabindex="-1">Quick View</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slick-next slick-arrow" style="display: block;"><i class="fa fa-angle-right"></i></div>
+                    <ul class="slick-dots" style="display: block;" role="tablist">
+                        <li class="slick-active" aria-hidden="false" role="presentation" aria-selected="true" aria-controls="navigation40" id="slick-slide40">
+                            <button type="button" data-role="none" role="button" tabindex="0">1</button>
+                        </li>
+                        <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation41" id="slick-slide41">
+                            <button type="button" data-role="none" role="button" tabindex="0">2</button>
+                        </li>
+                        <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation42" id="slick-slide42">
+                            <button type="button" data-role="none" role="button" tabindex="0">3</button>
+                        </li>
+                        <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation43" id="slick-slide43">
+                            <button type="button" data-role="none" role="button" tabindex="0">4</button>
+                        </li>
+                        <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation44" id="slick-slide44">
+                            <button type="button" data-role="none" role="button" tabindex="0">5</button>
+                        </li>
+                        <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation45" id="slick-slide45">
+                            <button type="button" data-role="none" role="button" tabindex="0">6</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <link rel="stylesheet" id="sp-wpsp-slick-css" href="https://shapedplugin.com/demo/woocommerce-product-slider-pro/wp-content/plugins/woo-product-slider-pro/public/assets/css/slick.min.css?ver=2.5.6" type="text/css" media="all">
+        <script src="js/jquery-3.3.1.js"></script>
+        <script src="js/bootstrap.js"></script>
+    </body>
+
+</html>

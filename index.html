@@ -1,0 +1,740 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/fontawesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+
+    <body class="">
+        <section class="back-color pb-3">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="offset-lg-1 col-lg-10 offset-md-1 col-md-10 offset-sm-1 col-sm-10 col-12">
+                        <header class="header">
+
+                            <div class="row mb-3 mt-3">
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <label for="CURRENCY" class="pr-4 btn-e">CURRENCY:</label>
+                                            <select id="dollar" class="btn-e">
+                                                <option value="dollar">DOLLAR</option>
+                                                <option value="taka">TAKA</option>
+                                                <option value="opel">DOLLAR</option>
+                                                <option value="audi">TAKA</option>
+                                            </select>
+                                            <button type="button" class="btn btn-default btn-e ml-2">EN</button>
+                                            <!-- <button type="button" class="btn btn-default btn-e ml-2">ES</button>
+                                            <button type="button" class="btn btn-default btn-e ml-2">FR</button> -->
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                                    <div class="topnav">
+                                        <ul class="top-link list-inline">
+                                            <li class="account" id="my_account">
+                                                <a href="#" title="My Account " class="btn-xs " data-toggle="dropdown">
+                                                    <i class="fas fa-user pr-1"></i> <span>My Account </span>  
+                                                </a>
+                                                <!--                                            <ul class="dropdown-menu "> dropdown-toggle
+                                                                                                <li><a href="register.html">Register</a>
+                                                                                                </li>
+                                                                                                <li><a href="login.html">Login</a>
+                                                                                                </li>
+                                                                                            </ul>-->
+                                            </li>
+                                            <li class="wishlist ">
+                                                <a href="#" id="wishlist-total" class="top-link-wishlist" title="Wish List (0) ">
+                                                    <i class="fas fa-book pr-1"></i>  Wish List (0) 
+                                                </a>
+                                            </li>
+                                            <li class=""><a href="login.html"><i class="fas fa-shopping-cart pr-1"></i></i>My Cart</a>
+                                            </li>
+                                            <li class="checkout "><a href="checkout.html" class="btn-link" title="Checkout "><span>
+                                                        <i class="fas fa-check pr-1"></i>Checkout </span></a>
+                                            </li>
+                                            <li class=""><a href="login.html"><i class="fas fa-sign-in-alt pr-1"></i>Login</a>
+                                            </li>
+                                        </ul>
+                                        <!--                                    <a class="active" href="#home">Home</a>
+                                                                            <a href="#news">News</a>
+                                                                            <a href="#contact">Contact</a>
+                                                                            <a href="#about">About</a>-->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="navbar-logo col-lg-4 col-md-4 col-sm-6 col-xs-5">
+                                    <div class="logo"><a href="index.php"><img src="images/demo-logo-2.png" title="Your Store" alt="Your Store"></a></div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 d-none d-md-block p-4">
+                                    <p class="add-test">PHONE: <span class="text-pi">347-849-9459</span></p>
+                                    <P class="add-test">Call us Monday-Saturday:9:00am - 6:00pm</P>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-7 p-4">
+                                    <div class="search-container">
+                                        <form class="example" action="/action_page.php" style="margin:auto;max-width: 250px;">
+                                            <input type="text" placeholder="Shopping Cart- $0.00" name="search2">
+                                            <button type="submit"><i class="fas fa-shopping-cart"></i></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </header>
+
+                    </div>
+                </div>
+            </div>  
+        </section>
+        <header class="mid-navhead">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="offset-1 col-10">
+                        <nav class="navbar navbar-expand-md  navbar-dark ptb-0">
+
+                            <button class="navbar-toggler mb-left" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse midnav" id="navbarSupportedContent">
+                                <div class="row">
+                                    <div class="col-lg-9 col-md-9 col-sm-12 border-box">
+                                        <ul class="navbar-nav ">
+                                            <li class="nav-item "><a href="index.html" class="nav-link text-secondary">Home</a></li>
+                                            <li class="nav-item"><a href="#"  class="nav-link text-secondary">Men</a></li>
+                                            <li class="nav-item"><a href="#"  class="nav-link text-secondary">Women</a></li>
+                                            <li class="nav-item"><a href="#"  class="nav-link text-secondary">Curtains</a></li>
+                                            <li class="nav-item"><a href="#"  class="nav-link text-secondary">Decorations</a></li>
+                                            <li class="nav-item"><a href="#" class="nav-link text-secondary">Kitchen</a></li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-12 p-md-0 d-none d-md-block">
+                                        <form class="example1" action="/action_page.php" style="margin:1px 0; max-width: 250px;">
+                                            <input type="text" placeholder="Search" name="search2">
+                                            <button type="submit"><i class="fa fa-search"></i></button>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </nav> 
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <section class="mt-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="offset-1 col-10">
+                        <div class="row">
+                            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+
+
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner">
+
+                                    <div class="item size active">
+                                        <img src="images/demo-slide-10.png" alt="Los Angeles" style="width:100%;" class="img-fluid">
+
+                                    </div>
+
+                                    <div class="item size">
+                                        <img src="images/demo-slide-7.png" alt="Chicago" style="width:100%;" class="img-fluid">
+                                    </div>
+
+                                    <div class="item size">
+                                        <img src="images/demo-slide-11.png" alt="New York" style="width:100%;" class="img-fluid">
+
+                                    </div>
+
+                                </div>
+
+                                <!-- Left and right controls -->
+                                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-5">
+            <div class="container-fluid">
+                <div class="row no-gutters">
+                    <div class="offset-1 col-10">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                                <div class="sec-img">
+                                    <img src="images/demo-discount-4.png" class="img-fluid">
+                                    <div class="w3-display-custom1 w3-text-white  w3-padding-32 ">
+                                        <span class="w3-custom1 w3-padding-large">Shop Now</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 col-12 d-block d-md-none d-lg-block mb-4">
+                                <div class="sec-img">
+                                    <img src="images/demo-discount-1.png" class="img-fluid">
+                                    <div class="w3-display-custom1 w3-text-white  w3-padding-32 ">
+                                        <span class="w3-custom1 w3-padding-large">Shop Now</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                                <div class="sec-img">
+                                    <img src="images/demo-discount-5.png" class="img-fluid">
+                                    <div class="w3-display-custom1 w3-text-white  w3-padding-32 ">
+                                        <span class="w3-custom1 w3-padding-large">Shop Now</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="offset-1 col-10">
+                        <div class="row no-gutters">
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-10">
+                                        <h2 class="newp"> New Products</h2>
+
+                                    </div>
+                                    <div class="col-2"></div>
+                                </div>
+                                <hr class="newphr">
+                            </div>
+
+
+                        </div>
+                        <div class="row no-gutters">
+                            <!-- <div class="card-deck" style="width: 100%">
+                                <div class="col-3 card ">
+                                    <div class="card-body newpimg">
+                                        <img src="images/demo-product-1.png" alt="" class="img-fluid imgnewp">
+                                        <div class="card-img-overlay bottom">
+                                            <button class="button-price">$500</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 card ">
+                                    <div class="card-body newpimg">
+                                        <img src="images/demo-product-new-1.png" alt="" class="img-fluid imgnewp">
+                                        <div class="card-img-overlay bottom">
+                                            <div class="btn-group" style="width: 100%">
+
+                                                <button class="button" style="width: 30%">$500</button>
+                                                <button class="button bt-2" style="width: 20%"><i class="fas fa-shopping-cart"></i></button>
+                                                <button class="button" style="width: 20%"><i class="fas fa-heart" ></i></button>
+                                                <button class="button bt-2" style="width: 30%">DETAILS</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 card ">
+                                    <div class="card-body newpimg">
+                                        <img src="images/demo-product-2.png" alt="" class="img-fluid imgnewp">
+                                        <div class="card-img-overlay bottom">
+                                            <button class="button-price">$500</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 card">
+                                    <div class="card-body newpimg">
+                                        <img src="images/demo-product-sale-1.png" alt="" class="img-fluid imgnewp">
+                                        <div class="card-img-overlay bottom">
+                                            <button class="button-price">$500</button>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div> -->
+                          
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 p-3">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="card">
+                                                <div class="card-body newpimg">
+                                                    <img src="images/demo-product-9.png" alt="" class="img-fluid imgnewp">
+                                                    <div class="card-img-overlay bottom">
+                                                        <button class="button-price">$500</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xl-12">
+                                            <div class="card ">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">New Modern Dresses</h4>
+                                                    <p class="card-text">Lorem ipsum dolor sit amet, conse adipiscing elit.</p>
+            
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12  p-3">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="card">
+                                                <div class="card-body newpimg">
+                                                    <img src="images/demo-product-new-2.png" alt="" class="img-fluid imgnewp">
+                                                    <div class="card-img-overlay bottom">
+                                                        <div class="btn-group" style="width: 100%">
+            
+                                                            <button class="button" style="width: 30%">$500</button>
+                                                            <button class="button bt-2" style="width: 20%"><i class="fas fa-shopping-cart"></i></button>
+                                                            <button class="button" style="width: 20%"><i class="fas fa-heart" ></i></button>
+                                                            <button class="button bt-2" style="width: 30%">DETAILS</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="card ">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">New Modern Dresses</h4>
+                                                    <p class="card-text">Lorem ipsum dolor sit amet, conse adipiscing elit.</p>
+            
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 d-block d-lg-none d-xl-block p-3">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="card">
+                                                <div class="card-body newpimg">
+                                                    <img src="images/demo-product-10.png" alt="" class="img-fluid imgnewp">
+                                                    <div class="card-img-overlay bottom">
+                                                        <button class="button-price">$500</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="card ">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">New Modern Dresses</h4>
+                                                    <p class="card-text">Lorem ipsum dolor sit amet, conse adipiscing elit.</p>
+            
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12  p-3">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="card">
+                                                <div class="card-body newpimg">
+                                                    <img src="images/demo-product-sale-5.png" alt="" class="img-fluid imgnewp">
+                                                    <div class="card-img-overlay bottom">
+                                                        <button class="button-price">$500</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="card ">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">New Modern Dresses</h4>
+                                                    <p class="card-text">Lorem ipsum dolor sit amet, conse adipiscing elit.</p>
+            
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="offset-1 col-10">
+                        <div class="row">
+                            <div class="col-xl-8 col-lg-12">
+                                <div class="row no-gutters">
+                                    <div class="col-12">
+                                        <h2 class="newp"> New Products</h2>
+                                        <hr class="newphr mr-5">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                        <div class="img-sec mt-5">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="images/demo-popular-5.png" alt="" class="img-fluid item-img">
+
+                                                </div>
+                                                <div class="col-8">
+                                                    <div class=" mt-3">
+                                                        <h3 class="text-uppercase">New model dress</h3>
+                                                        <p class="text-list">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                                                    </div>
+                                                    <div class="left-itm">
+                                                        <button class="button-price">$500</button>
+                                                        <div class="btn-group">
+
+                                                            <button class="button bt-2"><i class="fas fa-shopping-cart"></i></button>
+                                                            <!-- <button class="button"><i class="fas fa-heart"></i></button> -->
+                                                            <button class="button ">DETAILS</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                        <div class="img-sec mt-5">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="images/demo-popular-1.png" alt="" class="img-fluid item-img">
+
+                                                </div>
+                                                <div class="col-8">
+                                                    <div class=" mt-3">
+                                                        <h3 class="text-uppercase">New model dress</h3>
+                                                        <p class="text-list">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                                                    </div>
+                                                    <div class="left-itm">
+                                                        <button class="button-price">$500</button>
+                                                        <div class="btn-group">
+
+                                                            <button class="button bt-2"><i class="fas fa-shopping-cart"></i></button>
+                                                            <!-- <button class="button"><i class="fas fa-heart"></i></button> -->
+                                                            <button class="button ">DETAILS</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                        <div class="img-sec mt-5">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="images/demo-popular-7.png" alt="" class="img-fluid item-img">
+
+                                                </div>
+                                                <div class="col-8">
+                                                    <div class=" mt-3">
+                                                        <h3 class="text-uppercase">New model dress</h3>
+                                                        <p class="text-list">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                                                    </div>
+                                                    <div class="left-itm">
+                                                        <button class="button-price">$500</button>
+                                                        <div class="btn-group">
+
+                                                            <button class="button bt-2"><i class="fas fa-shopping-cart"></i></button>
+                                                            <!-- <button class="button"><i class="fas fa-heart"></i></button> -->
+                                                            <button class="button ">DETAILS</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                        <div class="img-sec mt-5">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="images/demo-popular-8.png" alt="" class="img-fluid item-img">
+
+                                                </div>
+                                                <div class="col-8">
+                                                    <div class=" mt-3">
+                                                        <h3 class="text-uppercase">New model dress</h3>
+                                                        <p class="text-list">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                                                    </div>
+                                                    <div class="left-itm">
+                                                        <button class="button-price">$500</button>
+                                                        <div class="btn-group">
+
+                                                            <button class="button bt-2"><i class="fas fa-shopping-cart"></i></button>
+                                                            <!-- <button class="button"><i class="fas fa-heart"></i></button> -->
+                                                            <button class="button ">DETAILS</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-3 pl-4 d-block d-lg-none d-xl-block">
+                                <div class="row no-gutters">
+                                    <div class="col-12">
+                                        <h2 class="newp"> Featured Products</h2>
+                                        <hr class="newphr ">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class=" mt-5">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="images/demo-product-featured-3.png" alt="" class="img-fluid item-img1">
+                                                    <div class="left-itm1">
+                                                        <button class="button-price">$500</button>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-8">
+                                                    <div class=" mt-3">
+                                                        <h3 class="text-uppercase">New model dress</h3>
+                                                        <p class="text-list">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="right-side newphr ">
+                                <div class="row">
+                                    <div class="col-12">
+                                        
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="images/demo-product-featured-4.png" alt="" class="img-fluid item-img1">
+                                                    <div class="left-itm1">
+                                                        <button class="button-price">$500</button>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-8">
+                                                    <div class=" mt-3">
+                                                        <h3 class="text-uppercase">New model dress</h3>
+                                                        <p class="text-list">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                      
+                                    </div>
+                                </div>
+                                <hr class="right-side newphr ">
+                                <div class="row">
+                                    <div class="col-12">
+                                       
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="images/demo-product-featured-5.png" alt="" class="img-fluid item-img1">
+                                                                                                        <div class="left-itm1">
+                                                        <button class="button-price">$500</button>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-8">
+                                                    <div class=" mt-3">
+                                                        <h3 class="text-uppercase">New model dress</h3>
+                                                        <p class="text-list">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                                <hr class="right-side newphr ">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="info mt-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="offset-1 col-10">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-12 border-right">
+                                <div class="social-link">
+                                    <ul class="infoul">
+                                        <li class="p-2">Follow Us On:</li>
+                                        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                                        <!-- <li><a href="#"><i class="fab fa-youtube-square"></i></a></li> -->
+                                    </ul>
+                                </div>
+                            </div> 
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-12 border-right d-block d-md-none d-lg-block">
+                                <div class="row">
+                                    <div class="col-4"> <i class="fa-2x fas fa-truck-moving fa-flip-horizontal pt-4 float-right"></i></div>
+                                    <div class="col-8">
+                                        <h3 class="fship">Free Shipping</h3>
+                                        <h6 class="fbt">On Orders  Over $ 499</h6>
+
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                <div class="row phone">
+                                    <div class="col-lg-4 col-md-4  col-sm-6 col-4"> <i class="fa-2x fas fas fa-mobile-alt pt-4 float-right"></i></div>
+                                    <div class="col-lg-8 col-md-8 col-sm-6 col-8 pt-2">
+                                        <h6 class="fbt">Order Online</h6>
+                                        <h3 class="fship2">Phone:<span class="text-pi"> 1 (234) 56 78 901</span></h3>
+
+
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="pt-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="offset-1 col-10">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                                <div class="widget_nav_menu footer-widget">
+                                    <div class="fw-title">
+                                        <h4>Information</h4>
+                                        <hr class="newphr ">
+                                    </div>
+                                    <div class="menu-services-container">
+                                        <ul id="menu-services" class="menu">
+                                            <li  class="menu-item menu-item-type-post_type menu-item-object-service"><a href="#"><i class=" mr-3 fas fa-sort-up fa-rotate-90"></i>About Us</a></li>
+                                            <li  class="menu-item menu-item-type-post_type menu-item-object-service "><a href="#"><i class=" mr-3 fas fa-sort-up fa-rotate-90"></i>Customer Service</a>
+                                            </li>
+                                            <li  class="menu-item menu-item-type-post_type menu-item-object-service "><a href="#"><i class=" mr-3 fas fa-sort-up fa-rotate-90"></i>Privacy Policy</a>
+                                            </li>
+                                            <li  class="menu-item menu-item-type-post_type menu-item-object-service "><a href="#"><i class=" mr-3 fas fa-sort-up fa-rotate-90"></i>Site Map</a>
+                                            <li  class="menu-item menu-item-type-post_type menu-item-object-service "><a href="#"><i class=" mr-3 fas fa-sort-up fa-rotate-90"></i>Contact Us</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                                <div class="widget_nav_menu footer-widget">
+                                    <div class="fw-title">
+                                        <h4>Why Buy From Us</h4>
+                                        <hr class="newphr ">
+                                    </div>
+                                    <div class="menu-services-container">
+                                        <ul id="menu-services" class="menu">
+                                            <li  class="menu-item menu-item-type-post_type menu-item-object-service"><a href="#"><i class=" mr-3 fas fa-sort-up fa-rotate-90"></i>Shipping & Returns</a></li>
+                                            <li  class="menu-item menu-item-type-post_type menu-item-object-service "><a href="#"><i class=" mr-3 fas fa-sort-up fa-rotate-90"></i>Secure Shopping</a>
+                                            </li>
+                                            <li  class="menu-item menu-item-type-post_type menu-item-object-service "><a href="#"><i class=" mr-3 fas fa-sort-up fa-rotate-90"></i>International Shipping</a>
+                                            </li>
+                                            <li  class="menu-item menu-item-type-post_type menu-item-object-service "><a href="#"><i class=" mr-3 fas fa-sort-up fa-rotate-90"></i>Affiliates</a>
+                                            <li  class="menu-item menu-item-type-post_type menu-item-object-service "><a href="#"><i class=" mr-3 fas fa-sort-up fa-rotate-90"></i>Group Sales</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                                <div class="widget_nav_menu footer-widget">
+                                    <div class="fw-title">
+                                        <h4>My Account</h4>
+                                        <hr class="newphr ">
+                                    </div>
+                                    <div class="menu-services-container">
+                                        <ul id="menu-services" class="menu">
+                                            <li  class="menu-item menu-item-type-post_type menu-item-object-service"><a href="#"><i class=" mr-3 fas fa-sort-up fa-rotate-90"></i>Sign In</a></li>
+                                            <li  class="menu-item menu-item-type-post_type menu-item-object-service "><a href="#"><i class=" mr-3 fas fa-sort-up fa-rotate-90"></i>View Cart</a>
+                                            </li>
+                                            <li  class="menu-item menu-item-type-post_type menu-item-object-service "><a href="#"><i class=" mr-3 fas fa-sort-up fa-rotate-90"></i>My Wishlist</a>
+                                            </li>
+                                            <li  class="menu-item menu-item-type-post_type menu-item-object-service "><a href="#"><i class=" mr-3 fas fa-sort-up fa-rotate-90"></i>Track My Order</a>
+                                            <li  class="menu-item menu-item-type-post_type menu-item-object-service "><a href="#"><i class=" mr-3 fas fa-sort-up fa-rotate-90"></i>Help</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                                <div class="widget_nav_menu footer-widget">
+                                    <div class="fw-title">
+                                        <h4>My Account</h4>
+                                        <hr class="newphr ">
+                                    </div>
+                                    <div class="menu-services-container mt-5">
+                                        <div class="search-container mb-3">
+                                            <form class="example" action="/action_page.php" style="margin:auto;">
+                                                <input type="text" placeholder="Your E-mail address" name="search2">
+                                                <button type="submit">GO</button>
+                                            </form>
+                                        </div>
+                                        <P class="footerp">2421 GRAND CONCOURSE <br>
+                                            BRONX, NY 10468</P>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="newphr ">
+                        <div class="row">
+                            <div class="copyright-section">
+                                <p class="footerp pl-3">Copyright © 2017 <a href="#"><span class="text-pi"> One-ict</span></a> All rights reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+
+        <script src="js/jquery-3.3.1.js"></script>
+        <script src="js/bootstrap.js"></script>
+    </body>
+
+</html>
